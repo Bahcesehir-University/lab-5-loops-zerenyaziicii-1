@@ -315,11 +315,21 @@ do{
     // TODO: Ask for a positive integer
     // TODO: Use a while loop to count digits
     // TODO: Print the digit count
-    int z;
-    cout << "Write a positive integer";
-    while(z >= 0){
-        
-    }
+    int main() {
+  int z;
+  int count = 0;
+  cout << " Write a positive integer:";
+  cin >> z;
+  while (z > 0){
+      z = z / 10;
+      count++;
+      if( z == 0){
+          count = 1;
+      }
+  }
+  cout << "Digit count = " << count << endl;
+  return 0;
+}
 
     cout << endl;
 
