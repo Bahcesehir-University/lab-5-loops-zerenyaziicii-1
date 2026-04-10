@@ -349,7 +349,41 @@ do{
     //       - Uses if/else or switch to handle each option
     //       - Loops back unless choice == 0
     // TODO: Print "Goodbye!" when exiting
-
+    int choice = -1;
+    int num1, num2;
+    while (choice != 0){
+    cout << "\n1. Add two numbers\n";
+    cout << "2. Multiply two numbers\n";
+    cout << "3. Check even or odd\n";
+    cout << "0. Exit\n";
+    cout << "Choice: ";
+    
+    cin >> choice;
+    
+    if (choice == 1){
+        cin >> num1 >> num2;
+       cout << num1 + num2 << endl;
+       
+    } else if (choice == 2) {
+         cin >> num1 >> num2;
+        cout << num1 * num2 << endl;
+        
+    } else if ( choice == 3){
+        cin >> num1;
+        
+        if (num1 % 2 == 0){
+             cout << num1 << "Even number" ;
+        } else {
+            cout << num1 << "Odd number";
+        }
+    } else if (choice == 0) {
+        cout << "Exit";
+       
+    } else {
+        cout << "Enter valid number";
+    }
+  }   
+}
     cout << endl;
 
     // ========================================================================
